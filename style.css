@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    padding: 20px;
+
+}
+.container{
+    margin: 0 40px;
+
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+    width: 60px;
+}
+.header .link{
+    position: relative;
+}
+.header .link:hover .mune span:nth-child(2) {
+    width: 100%;
+  }
+  .header .link .mune {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .header .link .mune span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+  }
+  .header .link .mune span:first-child {
+    width: 100%;
+  }
+  .header .link .mune span:nth-child(2) {
+    width: 60%;
+    transition: 1s;
+  }
+  .header .link .mune span:last-child {
+    width: 100%;
+  }
+  .header .link ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+  }
+  .header .link ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+  .header .link:hover ul{
+      display: block;
+  }
+  .header .link ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 1s;
+  }
+  .header .link ul li a:hover {
+    padding-left: 25px;
+  }
+  .header .link ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+  }
+/* ================================================ */
+.home{
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-image: url(img/landing.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home div h1{
+    font-size: 3rem;
+    color: #10cab7;
+    margin-bottom: 20px;
+}
+.home div h3{
+    font-weight: 300;
+    line-height: 2.2rem;
+}
+/* ============================================================== */
+.cards{
+    background-color: #f6f6f6;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards .text1{
+    width: 24%;
+    text-align: center;
+    
+}
+.cards .text1 h1{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 30px 0;
+}
+.cards .text1 p{
+    line-height: 1.7rem;
+    color: rgb(134, 131, 131);
+}
+#services{
+    width: 100%;
+    padding-bottom: 60px;
+}
+ .titel{
+    font-size: 6rem;
+    font-weight: 800;
+    text-align: center;
+    color: #eee8e8;
+}
+ .p-titel{
+   font-size: 1.2rem;
+   text-align: center;
+   position: relative;
+   bottom: 20px;
+   color: rgb(124, 121, 121);
+}
+#services .all-services{
+    margin-top: 70px;
+    margin-left: 90px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+#services .services-content{
+    width: 30%;
+}
+#services .services-content-2{
+    width: 28%;
+}
+#services .image{
+    width: 20%;
+    margin-right: 50px;
+    position: relative;
+    left: 130px;
+}
+#services .all-services h1 , .min-titel{
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+#services .all-services p , .min-paragraph{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: #6e6969;
+}
+#services  .card-services-1{
+    margin-bottom: 35px;
+}
+#services .border{
+    width: 7%;
+    height: 400px;
+    background-color: #2c4755;
+    position: relative;
+    bottom: 50px;
+    z-index: -1;
+}
+#portfolio{
+    background-color: #f6f6f6;
+    width: 100%;
+    padding-bottom: 60px;
+}
+#portfolio .cards-portfolio{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 80px;
+    flex-wrap: wrap;
+}
+#portfolio .card-portfolio{
+    width: 30%;
+    background-color: white;
+    padding-bottom: 60px;
+}
+#portfolio .text-body{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#about{
+    width: 100%;
+    padding-bottom: 100px;
+}
+#about .about-contect{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+#about  .img{
+    width: 20%;
+}
+
+#about .about-contect .paragraph-about{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about .about-contect .paragraph-about .p1{
+    font-weight: 600;
+    line-height: 2;
+}
+#about .about-contect .paragraph-about hr{
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-color: #10cab7;
+}
+#about .about-contect .paragraph-about .p2{
+    line-height: 2;
+    color: #6e6969;
+}
+#contact{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-bottom: 80px;
+}
+#contact .contact-content{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#contact .contact-content .content{
+    text-align: center;
+    line-height: 2;
+    width: 100%;
+}
+#contact .contact-content .content h1{
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #2c4755;
+}
+#contact .contact-content .content a{
+    text-decoration: none;
+    color: #10cab7;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+footer{
+    padding: 30px;
+    margin: 5px;
+    background-color: #2c4755;
+}
+footer h4{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+footer span{
+    color: #10cab7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1340px){
+    #about .after{
+        width: 80px;
+        background-color: #10cab7;
+        height: 440px;
+        position: relative;
+        bottom: -20px;
+        right: 120px;
+        z-index: -1;
+    }
+    #about .after2{
+        width: 80px;
+        background-color: #bbbdbd;
+        height: 460px;
+        position: relative;
+        bottom: 50px;
+        left: 120px;
+        z-index: -1;
+        
+    }
+}
+@media screen and (min-width:768px ) and (max-width:1023px){
+    .cards{
+        justify-content: space-between;
+        padding: 100px 15px;
+    }
+    .cards .text1{
+        width: 45%;
+        margin-top: 30px;
+       
+    }
+    #services .border , #services .image{
+        display: none;
+    }
+
+    #services .services-content , #services .services-content-2{
+        width: 40%;
+    }
+    #portfolio{
+        padding-bottom: 0px;
+    }
+    #portfolio .cards-portfolio{
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+    #portfolio .cards-portfolio .card-portfolio{
+        width: 45%;
+        margin-bottom: 25px;
+        margin-right: 30px;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+    .cards .text1{
+        width: 80%;
+        margin-bottom: 80px;
+    }
+    #services .all-services{
+        flex-direction: column;
+        margin:50px 10px ;
+    }
+    #services .all-services .services-content , #services .all-services .services-content-2{
+        width: 100%;
+        text-align: center;
+    }
+    #services .all-services .services-content .card-services-1 , #services .all-services .services-content-2  .card-services-1{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    #services .border , #services .image{
+        display: none;
+    }
+    #portfolio{
+        padding: 0 10px;
+    }
+    #portfolio .cards-portfolio{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 18px;
+        
+    }
+    #portfolio .cards-portfolio .card-portfolio{
+        width: 100%;
+        margin-bottom: 25px;
+        margin-right: 20px;
+      
+    }
+    #about .about-contect{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .about-contect .paragraph-about{
+        width: 94%;
+        align-items: center;
+        text-align: center;
+    }
+    #about .about-contect .img{
+        width: 50%;
+        margin-bottom: 80px;
+    }
+    .titel{
+        font-size: 3.5rem;
+        
+    }
+    #contact .contact-content .content h1{
+        font-size: 1.6rem;
+    }
+    #contact .contact-content .content a{
+       
+        font-size: 1.4rem;
+     
+    }
+}
